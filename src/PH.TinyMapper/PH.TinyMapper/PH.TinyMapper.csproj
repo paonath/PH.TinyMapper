@@ -25,7 +25,9 @@
   </PropertyGroup>
 
 
-
+  <ItemGroup>
+    <None Include="nuget_es_img.png" Pack="true" PackagePath="" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\LICENSE" Link="LICENSE" Pack="true" PackagePath="\" >
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

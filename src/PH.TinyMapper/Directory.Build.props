@@ -1,0 +1,27 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Paolo Innocenti</Authors>
+    <Copyright>Copyright $([System.DateTime]::UtcNow.ToString("yyyy")) (c) Paolo Innocenti - paonath@gmail.com </Copyright>
+
+    <PackageId>PH.TinyMapper</PackageId>
+
+
+    <Description>
+      A c# tiny object mapper
+
+      The mapper remaps properties with the same name between source and destination (if these have the same type or if they are complex properties and a mapping between left and right is possible)
+    </Description>
+
+    <PackageReleaseNotes>
+      First release
+    </PackageReleaseNotes>
+
+
+    <PackageTags>release,changelog</PackageTags>
+
+    <PackageVersion>0.0.1</PackageVersion>
+    <Version>0.0.1</Version>
+
+    <SourceRevisionId>$(Configuration) $([System.DateTime]::UtcNow.ToString("yyyyMMdd"))</SourceRevisionId>
+  </PropertyGroup>
+</Project>

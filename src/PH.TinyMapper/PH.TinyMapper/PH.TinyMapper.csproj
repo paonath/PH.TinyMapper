@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;netstandard2.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable Condition="'$(TargetFramework)' == 'net8.0' ">enable</Nullable>
+    <Nullable Condition="'$(TargetFramework)' != 'net8.0' ">disable</Nullable>
+
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+
+   
+    <RepositoryUrl>https://github.com/paonath/PH.TinyMapper</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/paonath/PH.TinyMapper</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/paonath/Icons/master/nuget_es_img.png</PackageIconUrl>
+
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <None Include="..\..\..\LICENSE" Link="LICENSE" Pack="true" PackagePath="\" >
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\README.md" Link="README.md" Pack="true" PackagePath="\">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="[1.1.1,)">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageIcon>nuget_es_img.png</PackageIcon>
+  </PropertyGroup>
+
+</Project>
